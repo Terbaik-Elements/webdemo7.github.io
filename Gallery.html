@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>index</title>
+  <meta charset="utf-8">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- CDN link for social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body style="height:1500px">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="index.html">Terbaik</a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About Us.html">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Blog.html">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Contact.html">Contact</a>
+    </li>
+  </ul>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+</nav>
+
+<div class="container-fluid" style="margin-top:80px">
+  </div>
+
+
+
+
+
+<div class="container-fluid">
+<style>
+  /* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 100;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+
+<h2 style="text-align: center;">Gallery</h2>
+
+
+
+<section>
+  <!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="F:/webdesign2/2ndcode/images/8.jpg" style="width: 100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="F:/webdesign2/2ndcode/images/9.jpg" style="width: 100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="F:/webdesign2/2ndcode/images/10.jpg" style="width: 100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="F:/webdesign2/2ndcode/images/11.jpg" style="width: 100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+</body>
+<style>
+
+
+
+</html>
